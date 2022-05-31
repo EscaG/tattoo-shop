@@ -8,6 +8,7 @@ export default function Header() {
 	const [isActiveMenu, setIsActiveMenu] = useState(false);
 	const size = useWindowSize();
 	const widthXL = process.env.REACT_APP_W_XL;
+	console.log(size);
 
 	return (
 		<header className='header'>
