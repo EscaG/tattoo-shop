@@ -1,0 +1,38 @@
+.footer{
+	background-color: #050402;
+	color: #FAF6F2;
+
+}
+.footer-container{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	// border: 1px solid #fff;
+}
+
+
+@media (min-width: 400px){ 
+
+}
+@media (min-width: 576px){ 
+
+}
+@media (min-width: 768px){ 
+
+}
+@media (min-width: 992px){ 
+	.footer-container{
+		flex-direction: row;
+	}
+	.left-footer{
+		flex:57%;
+	}
+	.right-footer{
+		flex:43%;
+	}
+}
+@media (min-width: 1200px){ 
+	
+}

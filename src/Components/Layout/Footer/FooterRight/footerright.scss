@@ -1,0 +1,124 @@
+.right-footer {
+	position: relative;
+	padding: 55px 20px 60px 20px;
+	border-top: 1px solid #524336;
+	&::after {
+		position: absolute;
+		content: "";
+		left: 0px;
+		top: -7px;
+		border: 6px solid transparent;
+		border-left: 10px solid #524336;
+	}
+	&::before {
+		position: absolute;
+		content: "";
+		right: 0px;
+		top: -7px;
+		border: 6px solid transparent;
+		border-right: 10px solid #524336;
+	}
+	&__email,
+	&__phone {
+		position: relative;
+		font-size: 20px;
+		color: #faf6f2;
+		transition: 0.3s;
+		&:hover {
+			color: #bb8c5f;
+		}
+		svg {
+			position: absolute;
+			// top: 0;
+			left: 0;
+		}
+	}
+	&__email {
+		padding: 0px 0px 0px 20px;
+		fill: #faf6f2;
+		&:hover {
+			fill: #bb8c5f;
+		}
+		svg {
+			transform: translateY(1px);
+		}
+	}
+	&__phone {
+		padding: 0px 0px 0px 17px;
+		stroke: #faf6f2;
+		&:hover {
+			stroke: #bb8c5f;
+		}
+		svg {
+			// transform: translateY(2px);
+		}
+	}
+	&__time {
+		margin: 0px 0px 30px 0px;
+		font-size: 17px;
+		color: #636b78;
+	}
+	&__list-item-phone {
+		margin: 0px 0px 20px 0px;
+	}
+	&__list-item-socials {
+		margin: 0px 0px 20px 0px;
+		a {
+			display: inline-block;
+			margin: 0px 12px 0px 0px;
+		}
+	}
+	&__list {
+		display: flex;
+		flex-direction: column;
+	}
+}
+.socials-footer {
+	fill: #bb8c5f;
+	transition: 0.3s;
+	&:hover {
+		fill: #524336;
+	}
+}
+
+@media (min-width: 400px) {
+}
+@media (min-width: 576px) {
+}
+@media (min-width: 768px) {
+}
+@media (min-width: 992px) {
+	.right-footer {
+		padding: 129px 0px 100px 20px;
+		border-top: none;
+		border-left: 1px solid #524336;
+		&::after {
+			left: -6px;
+			top: 0px;
+			border-left: none;
+			border: 6px solid transparent;
+			border-top: 10px solid #524336;
+		}
+		&::before {
+			right: unset;
+			bottom: 0;
+			left: -6px;
+			border-right: none;
+			border: 6px solid transparent;
+			border-bottom: 10px solid #524336;
+		}
+	}
+}
+@media (min-width: 1199px) {
+	.right-footer {
+		&__list {
+			margin: 0px 0px 15px 0px;
+			flex-direction: row;
+			align-items: center;
+			& > div {
+				// display: inline-block;
+				margin: 0px 25px 0px 0px;
+			}
+		}
+	}
+}
